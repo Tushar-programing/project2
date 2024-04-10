@@ -35,7 +35,7 @@ function Profile() {
         console.log(pair[0] + ', ' + pair[1]);
       }
 
-      const res = await axios.post(`http://localhost:8000/api/v1/users/avatar/${id}`, formData);
+      const res = await axios.post(`https://register-backend-12k4.onrender.com/api/v1/users/avatar/${id}`, formData);
       console.log(res);
       if (res) {
         navigate(`/purpose/${id}`)

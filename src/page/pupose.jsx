@@ -21,7 +21,7 @@ function pupose() {
         console.log(pair[0] + ', ' + pair[1]);
       }
   
-      const res = await axios.post(`http://localhost:8000/api/v1/users/purpose/${id}/${purpose}`);
+      const res = await axios.post(`https://register-backend-12k4.onrender.com/api/v1/users/purpose/${id}/${purpose}`);
   
       if (res) {
         // console.log("successfully");
